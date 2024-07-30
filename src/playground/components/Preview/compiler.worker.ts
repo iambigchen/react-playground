@@ -6,7 +6,7 @@ import { PluginObj } from '@babel/core';
 
 export const beforeTransformCode = (filename: string, code: string) => {
     let _code = code
-    const regexReact = /import\s+React/g
+    const regexReact = /import\s+React\d/g
     if ((filename.endsWith('.jsx') || filename.endsWith('.tsx')) && !regexReact.test(code)) {
       _code = `import React from 'react';\n${code}`
     }

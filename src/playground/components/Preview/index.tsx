@@ -1,4 +1,3 @@
-import Editor from "../CodeEdit/Edit";
 import { useContext, useState, useRef, useEffect } from "react";
 import { PlaygroundContext } from "../../PlayGroundContext";
 import CompilerWorker from './compiler.worker?worker'
