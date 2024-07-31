@@ -23,5 +23,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "exclude": ["src/playground/template/main.tsx"],
   "include": ["src"]
 }
